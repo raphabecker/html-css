@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Calculadora de media!</h1>
+    <main>
+        A primeira nota foi <input type="number" name="nota1" id="nota1"> e a segunda <input type="number" name="nota2" id="nota2">
+        <input type="button" value="Calcular" onclick="calculo()">
+        <div id="res"></div>
+    </main>
+    <script>
+        function calculo() {
+            primeira = document.getElementById ("nota1")
+            segunda = document.getElementById ("nota2")
+            n1 = Number(primeira.value)
+            n2 = Number(segunda.value)
+            m = (n1 + n2 )/ 2
+            if (m >= 7) {
+                res.innerHTML = `A media do aluno foi ${m} e esta aprovado!`
+            } else {
+                res.innerHTML = `A media do aluno foi ${m} e esta reprovado!`
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
